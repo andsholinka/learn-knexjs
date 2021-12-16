@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/semu/siswa HTTP/1.1
+
+###
+GET http://localhost:8080/api/semu/siswa/1 HTTP/1.1
+
+###
+POST http://localhost:8080/api/semu/siswa HTTP/1.1
+Content-Type: application/json
+
+{
+    "nama": "sudirman",
+    "kelas": "6",
+    "umur": "14",
+    "telp": "0897829083902",
+    "ortu": "Mahmud MD"
+}
+
+###
+PUT http://localhost:8080/api/semu/siswa/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nama": "sudirman",
+    "kelas": "6",
+    "umur": "16",
+    "telp": "0897829083902",
+    "ortu": "Mahmud MD"
+}
+
+###
+DELETE http://localhost:8080/api/semu/siswa/3 HTTP/1.1
